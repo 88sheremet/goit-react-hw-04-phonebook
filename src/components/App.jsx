@@ -43,7 +43,6 @@ export const App = () => {
   };
 
   const removeContact = contactId => {
-    console.log(contacts);
     setContacts(prevState => [
       ...prevState.filter(contact => contact.id !== contactId),
     ]);

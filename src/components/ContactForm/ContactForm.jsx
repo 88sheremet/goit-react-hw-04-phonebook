@@ -5,11 +5,11 @@ import { useState } from 'react';
 export const ContactForm = ({ addContact }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const contactObj = { name, number };
+  const data = { name, number };
 
   const onHandleSubmit = e => {
     e.preventDefault();
-    addContact(contactObj);
+    addContact(data);
     setName('');
     setNumber('');
   };
